@@ -1,0 +1,41 @@
+{
+	"name": "parquet_frm_git",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze-layer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "transaction_id",
+				"type": "INT64"
+			},
+			{
+				"name": "customer_id",
+				"type": "INT32"
+			},
+			{
+				"name": "product_category",
+				"type": "UTF8"
+			},
+			{
+				"name": "amount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "store_location",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

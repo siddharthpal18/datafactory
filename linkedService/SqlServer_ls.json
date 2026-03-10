@@ -1,0 +1,21 @@
+{
+	"name": "SqlServer_ls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": ".\\SQLEXPRESS",
+			"database": "data-factory-learn-db",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "siddharth",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyNjZhNTE4Mi0xMzY4LTRhYTMtOWQyYy1kOWJkZjE4OTg2NWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "self-hosted-ir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

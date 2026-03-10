@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Siddharth",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6d579a50-ac0c-48b4-88ed-6b80549e3fb5",
+		"tenantId": "8088ea21-5772-48a5-814e-559155f1342f"
+	}
+}
